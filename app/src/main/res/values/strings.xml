@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DroidOVPN</string>
+    <string name="app_name">VPNGate for PriConne</string>
     <string name="server_details">Server Details</string>
     <string name="settings">Settings</string>
     <string name="open_source_licenses">Open source licenses</string>
