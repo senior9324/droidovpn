@@ -156,7 +156,8 @@ public class OvpnUtils {
 
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("*/*");
-        intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(getFile(activity, server)));
+        intent.putExtra(Intent.EXTRA_STREAM, FileProvider.getUriForFile(activity,
+                activity.getApplicationContext().getPackageName() + ".fileprovider", getFile(activity, server)));
         activity.startActivity(Intent.createChooser(intent, "Share Profile using"));
     }
 }
